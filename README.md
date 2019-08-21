@@ -6,14 +6,14 @@ Our OpenShift Origin instance runs on CentOS 7, configured using the following w
 ## Setup
 ```
 # Kibana
-sudo oc new-app https://github.com/amida-tech/elk-openshift-aws --context-dir=kibana --name=kibana
+sudo oc new-app https://github.com/rhodix/elk-openshift-aws --context-dir=kibana --name=kibana
 sudo oc expose service kibana
 
 # Elasticsearch
-sudo oc new-app https://github.com/amida-tech/elk-openshift-aws --context-dir=elasticsearch --name=elasticsearch
+sudo oc new-app https://github.com/rhodix/elk-openshift-aws --context-dir=elasticsearch --name=elasticsearch
 
 # Logstash
-sudo oc new-app https://github.com/amida-tech/elk-openshift-aws --context-dir=logstash --name=logstash
+sudo oc new-app https://github.com/rhodix/elk-openshift-aws --context-dir=logstash --name=logstash
 ```
 
 ## Persisting data
