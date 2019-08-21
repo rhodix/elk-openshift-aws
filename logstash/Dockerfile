@@ -1,7 +1,7 @@
 # https://github.com/elastic/logstash-docker
 FROM docker.elastic.co/logstash/logstash:7.3.0
 
-COPY config/logstash.conf /usr/share/logstash/pipeline/logstash.conf
+COPY pipeline/logstash.conf /usr/share/logstash/pipeline/logstash.conf
 
 RUN chmod 0777 /usr/share/logstash/data
 
