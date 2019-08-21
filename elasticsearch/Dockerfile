@@ -1,5 +1,5 @@
 # https://github.com/elastic/elasticsearch-docker
-FROM docker.elastic.co/elasticsearch/elasticsearch:latest
+FROM docker.elastic.co/elasticsearch/elasticsearch:7.3.0
 
 RUN chmod -R 0777 /usr/share/elasticsearch
 
